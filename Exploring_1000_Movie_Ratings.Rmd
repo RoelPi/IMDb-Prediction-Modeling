@@ -73,7 +73,7 @@ ds <- getData()
 ```
 
 ## Feature building
-Several features such as the directors, the actors, the countries and the genres are lists with comma's. The following script transforms these lists into dummy variables - a 0 or 1 when a specific actor plays in the movie, when a director has worked on the film, when the movie originates from a specific country and when a movie is attributed to a specific genre.
+Several features such as the directors, the actors, the countries and the genres are lists with comma's. The following script transforms these lists into dummy variables - a 0 or 1 when a specific actor plays in the movie, when a director has worked on the movie, when the movie originates from a specific country and when a movie is attributed to a specific genre.
 
 ```{r makeLong, cache=TRUE}
 makeLong <- function(dataset = df,col="Genre") {
